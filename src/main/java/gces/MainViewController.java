@@ -87,6 +87,7 @@ public class MainViewController implements Initializable {
                         public void run() {
                             System.out.println(projectList.get(projectKey).getIndex() + projectTitle + count);
                             pieChartData.get(projectList.get(projectKey).getIndex()).setPieValue(count);
+                            pieChartData.get(projectList.get(projectKey).getIndex()).setName(projectTitle + " (" + count + " votes)");
                         }
                     });
                 }
